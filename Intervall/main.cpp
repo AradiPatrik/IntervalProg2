@@ -29,11 +29,13 @@ void firstAssignment()
 
 void secondAssignment()
 {
-	IntervalSet set(5);
-	set += ColorInterval(10, 20, "Black");
-	IntervalSet *pis = new IntervalSet(set);
-	std::cout << set;
-	delete pis;
+	IntervalSet set(10);
+	set += Interval(10, 20);
+	set += Interval(10, 40);
+	set += Interval(20, 30);
+	set += ColorInterval(10, 20);
+	set += ColorInterval(5, 10, "black");
+	set += ColorInterval(6, 8, "purple");
 	std::cout << set;
 }
 
